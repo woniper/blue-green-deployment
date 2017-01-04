@@ -1,0 +1,20 @@
+version: "2"
+services:
+  nginx:
+    build: nginx/.
+    image: nginx:0.1
+    ports:
+     - "80:80"
+    links:
+     - app1
+     - app2
+  app1:
+    build: app1/.
+    image: app1:0.1
+    ports:
+     - "8888:8888"
+  app2:
+    build: app2/.
+    image: app2:0.1
+    ports:
+      - "8889:8889"
