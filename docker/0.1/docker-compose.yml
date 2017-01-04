@@ -1,7 +1,7 @@
 version: "2"
 services:
   nginx:
-    build: woniper/blue-green-deployment-nginx
+    build: nginx/.
     image: nginx:0.1
     ports:
      - "80:80"
@@ -9,12 +9,12 @@ services:
      - app1
      - app2
   app1:
-    build: woniper/blue-green-deployment-app1
+    build: app1/.
     image: app1:0.1
     ports:
      - "8888:8888"
   app2:
-    build: woniper/blue-green-deployment-app2
+    build: app2/.
     image: app2:0.1
     ports:
       - "8889:8889"
