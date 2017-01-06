@@ -1,6 +1,6 @@
 ### Blue-Green-Deployment Docker
 --
-<a href="http://martinfowler.com/bliki/BlueGreenDeployment.html">BlueGreen 배포</a>를 Docker를 이용한 예제입니다.
+[BlueGreen 배포](http://martinfowler.com/bliki/BlueGreenDeployment.html)를 Docker를 이용한 예제입니다.
 
 ### 0.2
 > dynamic proxy 적용이 안된 버전입니다. 때문에 무중단 배포는 아직 구현되지 않았지만, 버전 교체 자동화는 적용됐습니다.
