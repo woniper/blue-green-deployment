@@ -15,6 +15,6 @@ public class App1Application {
 
 	@GetMapping("/")
 	public String app1() {
-		return "hello app1";
+		return "hello app1 나는 Blue 입니다.";
 	}
 }

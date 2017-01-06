@@ -15,6 +15,6 @@ public class App2Application {
 
 	@GetMapping("/")
 	public String app2() {
-		return "hello app2";
+		return "hello app2 나는 원래 Green 이에요.";
 	}
 }

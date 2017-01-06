@@ -1,0 +1,12 @@
+version: "2"
+services:
+  nginx:
+    build: nginx/.
+    image: nginx:0.2
+    ports:
+     - "80:80"
+    depends_on:
+     - app
+  app:
+    build: app2/.
+    image: app2:0.2
